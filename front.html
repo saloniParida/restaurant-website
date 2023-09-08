@@ -1,0 +1,408 @@
+<html>
+
+<head>
+    <title>Front</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="front.css">
+</head>
+
+<body>
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 550);
+        });
+    </script>
+    <!-- NAVIGATION BAR START -->
+
+    <section>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <a class="navbar-brand"><img src="img/SP_FOODS_LINE-p9usw3mdhohjrgvas8tbet9ih7me5vdkg0qyzmwh00.png"
+                        alt=""></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#bar" id="togicon">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="bar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="btn text-white">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#aboutus" class="btn text-white">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="btn text-white">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu3.html" class="btn text-white">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactus2.html" class="btn text-white">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="input-group" id="srch">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </section>
+
+    <!-- NAVIGATION BAR END -->
+    <!-- CAROUSEL START -->
+
+    <section>
+
+        <div class="carousel slide" data-ride="carousel" data-interval="2000" id="demo">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div id="setpos" class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="imgcar">
+                        <img src="img/ind1.jpg" alt="">
+                    </div>
+                    <div id="center">
+                        <p id="text">Get Ready
+                            To Join With Us</p>
+                        <button id="centerbtn" data-toggle="modal" data-target="#mod">Book a table</button>
+
+                    </div>
+                </div>
+                <!-- HERE MODAL START ON BUTTON BOOK A TABLE AND OPEN A FORM -->
+                <div class="modal" id="mod">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <button type="button" data-dismiss="modal" class="close">&times;</button>
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">Name*</label>
+                                        <input type="text" class="form-control" placeholder="Please Enter Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Email*</label>
+                                        <input type="email" class="form-control" placeholder="Email-id">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Contact*</label>
+                                        <input type="email" class="form-control"
+                                            placeholder="Please Enter Your Phone No.">
+                                    </div>
+                                </form>
+                                <center><button class="btn btn-danger">Book Table</button></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL AND FORM PART END HERE -->
+                <div class="carousel-item">
+                    <div id="imgcar">
+                        <img src="img/ind-2.jpg" alt="">
+                    </div>
+                    <div id="center">
+                        <p id="text">Welcome to</p>
+                        <center>
+                            <p id="text1">SP Foods</p>
+                        </center>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div id="imgcar">
+                        <img src="img/ind-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+
+            </a>
+            <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+    <!-- CAROUSEL END -->
+    <!-- ABOUT US -->
+    <section>
+        <div id="aboutus" class="container-fluid">
+
+            <div class="row r1">
+                <div class="col-md-6 ">
+                    <img id="ig" src="img/wp1874159 copy.jpg">
+
+                </div>
+                <div class="col-md-6">
+                    <p>SP FOOD’s cuisine draws influence largely from America,
+                        putting a twist on treasured classics and introducing modern culinary
+                        techniques with the changing of the seasons. House-made pastas, cheeses
+                        and other hand-crafted ingredients abound in the from-scratch kitchen,
+                        and guests will taste the culinary team’s attention to detail in every bite.
+                        Staying true to Italian dining traditions, we also offers a “For the Table”
+                        dining option that allows for a fun, family-style experience, offered nightly alongside
+                        the full à la carte menu. </p>
+                </div>
+
+            </div>
+            <div class="row r1">
+
+                <div class="col-md-6">
+
+                    <p>The restaurant’s open-concept dining room is anchored around the kitchen’s wood-burning oven,
+                        reminiscent of the hearth in a family home.
+                        Accented by reclaimed barn wood and refined ceramic tile, the modern space envelops guests in a
+                        welcoming
+                        atmosphere – whether they’re visiting the bar for a hand-crafted cocktail or a glass of wine,
+                        grabbing a pizza with the kids or sitting
+                        down for a family-style dinner with friends and colleagues.</p>
+                </div>
+                <div class="col-md-6 ">
+                    <img id="ig" src="img/ind4.jpg">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div class="border-bottom"></div>
+    <section class="pt-4">
+        <center>
+            <h2>TEAM</h2>
+        </center>
+        <div class="container-fluid pt-4">
+            <div class="card-deck">
+                <div class="col-md-3">
+                    <div class="card ">
+                        <div class="card-header">
+                            <img src="img/chef1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title">AMIT GARG</h5>
+                            </center>
+                        </div>
+
+                    </div>
+                    <center class="pt-2">
+                        <h6>General Manager</h6>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/chef2.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title">ANNEY JACKSON</h5>
+                            </center>
+                        </div>
+                    </div>
+                    <center class="pt-2">
+                        <h6>Executive Chef</h6>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/chef3.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title">STEVE PALMER</h5>
+                            </center>
+                        </div>
+                    </div>
+                    <center class="pt-2">
+                        <h6>Managing Partner</h6>
+                    </center>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/chef4.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <center>
+                                <h5 class="card-title">KEVIN CRAP</h5>
+                            </center>
+                        </div>
+                    </div>
+                    <center class="pt-2">
+                        <h6>Area Director</h6>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-bottom"></div>
+    <div class="container-fluid end">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="/img/SP_FOODS_LINE-p9usw3mdhohjrgvas8tbet9ih7me5vdkg0qyzmwh00.png">
+            </div>
+            <div class="col-md-3">
+                <h4 class="text-white">WORKING HOURS</h4>
+                <p class="text-white">Sunday-Thursday</p>
+                <h6 class="text-white">0.8:00 am-0.9:00pm</h6>
+                <p class="text-white">Only Friday</p>
+                <h6 class="text-white">0.3:00 pm-0.9:00pm</h6>
+                <p class="text-white">saturday</p>
+            </div>
+            <div class="col-md-3">
+                <h4 class="text-white">Reach Us</h4>
+                <p class="text-white"><b>Location</b></p>
+                <p class="text-white">55 Main Street,Patiala</p>
+                <p class="text-white"><b>Gmail Adress:</b></p>
+                <p class="text-white">xyz@gmail.com</p>
+                <p class="text-white"><b>Phone Number</b></p>
+                <p class="text-white">9999999999</p>
+            </div>
+            <div class="col-md-3">
+                <center>
+                    <h4 class="text-white">GALLERY</h4>
+                </center>
+                <div class="pt-3">
+                    <div id="grd">
+                        <div>
+                            <a data-toggle="modal" data-target="#ig1">    
+                            <img id="grid" src="img/f1.jpg" alt="" width="100%">
+                            </a>  
+                            <div class="modal" id="ig1">
+                                <div class="modal-dialog">
+                                    <div>
+                                        <div class="modal-body">
+                                            <button type="button" data-dismiss="modal"
+                                                class="close text-white">&times;</button>
+                                            <img src="img/f1.jpg" alt="" width="100%" height="80%"
+                                                style="background:transparent;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a data-toggle="modal" data-target="#ig2">    
+                                <img id="grdi" src="img/f2.jpg" alt="" width="100%">
+                            </a>  
+                            <div class="modal" id="ig2">
+                                <div class="modal-dialog">
+                                    <div>
+                                        <div class="modal-body">
+                                            <button type="button" data-dismiss="modal"
+                                                class="close text-white">&times;</button>
+                                            <img src="img/f2.jpg" alt="" width="100%" height="80%"
+                                                style="background:transparent;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a data-toggle="modal" data-target="#ig3">    
+                                <img id="grdi" src="img/f2.jpg" alt="" width="100%">
+                            </a>  
+                            <div class="modal" id="ig3">
+                                <div class="modal-dialog">
+                                    <div>
+                                        <div class="modal-body">
+                                            <button type="button" data-dismiss="modal"
+                                                class="close text-white">&times;</button>
+                                            <img src="img/f3.jpg" alt="" width="100%" height="80%"
+                                                style="background:transparent;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a data-toggle="modal" data-target="#ig4">    
+                                <img id="grdi" src="img/f4.jpg" alt="" width="100%">
+                            </a>  
+                            <div class="modal" id="ig4">
+                                <div class="modal-dialog">
+                                    <div>
+                                        <div class="modal-body">
+                                            <button type="button" data-dismiss="modal"
+                                                class="close text-white">&times;</button>
+                                            <img src="img/f4.jpg" alt="" width="100%" height="80%"
+                                                style="background:transparent;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a data-toggle="modal" data-target="#ig5">    
+                                <img id="grdi" src="img/f5.jpg" alt="" width="100%">
+                            </a>  
+                            <div class="modal" id="ig5">
+                                <div class="modal-dialog">
+                                    <div>
+                                        <div class="modal-body">
+                                            <button type="button" data-dismiss="modal"
+                                                class="close text-white">&times;</button>
+                                            <img src="img/f5.jpg" alt="" width="100%" height="80%"
+                                                style="background:transparent;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a data-toggle="modal" data-target="#ig6">    
+                                <img id="grdi" src="img/f6.jpg" alt="" width="100%">
+                            </a>  
+                            <div class="modal" id="ig6">
+                                <div class="modal-dialog">
+                                    <div>
+                                        <div class="modal-body">
+                                            <button type="button" data-dismiss="modal"
+                                                class="close text-white">&times;</button>
+                                            <img src="img/f6.jpg" alt="" width="100%" height="80%"
+                                                style="background:transparent;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button>
+                <i class='fa fa-arrow-up'></i>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

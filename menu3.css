@@ -1,0 +1,19 @@
+#srch{
+    width: 200px;
+}
+
+body{
+    background-color: rgb(34, 33, 33);
+}
+#btmenu:hover{
+    background-color: rgb(0, 0, 0);
+
+}
+    #mimg {
+        border-radius: 50%;
+        width: 150px;
+        height: 140px;
+    }
+    .cntent{
+        align-items: center;
+    }
